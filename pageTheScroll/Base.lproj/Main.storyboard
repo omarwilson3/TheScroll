@@ -38,12 +38,17 @@
                                 </constraints>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWD-bN-UTA">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="77.5" y="0.0" width="220" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="g68-ws-9BF"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="xWD-bN-UTA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Ei-1j-IRx"/>
                             <constraint firstItem="Yfc-2U-9WZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5JR-hM-1hC"/>
+                            <constraint firstItem="xWD-bN-UTA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8xD-Hc-CD0"/>
                             <constraint firstItem="xWD-bN-UTA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JVY-KN-YLk"/>
                             <constraint firstItem="Rmg-mN-Dx9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NNE-6w-avQ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xWD-bN-UTA" secondAttribute="bottom" id="ToK-Aa-hTl"/>
@@ -51,13 +56,14 @@
                             <constraint firstAttribute="trailing" secondItem="Yfc-2U-9WZ" secondAttribute="trailing" id="ZOf-o7-EA7"/>
                             <constraint firstAttribute="trailing" secondItem="Rmg-mN-Dx9" secondAttribute="trailing" id="cWS-PP-PRR"/>
                             <constraint firstItem="i2y-by-bQc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="heQ-2g-MHv"/>
-                            <constraint firstAttribute="trailing" secondItem="xWD-bN-UTA" secondAttribute="trailing" id="i6s-5I-HPd"/>
-                            <constraint firstItem="xWD-bN-UTA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oKk-3E-rNc"/>
                             <constraint firstAttribute="bottom" secondItem="Rmg-mN-Dx9" secondAttribute="bottom" id="rKt-be-kAF"/>
                             <constraint firstAttribute="trailing" secondItem="i2y-by-bQc" secondAttribute="trailing" constant="8" id="rKx-T2-0d1"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Yfc-2U-9WZ" secondAttribute="bottom" id="u0X-ji-Q2D"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="xWD-bN-UTA" id="NLw-uR-jfQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
